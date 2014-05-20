@@ -1,0 +1,68 @@
+ #usuario {
+  width: 68%;
+}
+
+#Clave {
+  width: 68%;
+}
+#labelMensaje {
+  width: 68%;
+}
+
+  p { margin:0; padding:0}
+    .message {
+	    margin-left: 10px;
+        width: 100%;
+        clear: both;
+    }
+
+    .author {
+        color: blue; 
+        margin-left: 10px; 
+        font-weight: bold; 
+        height: auto; 
+        float: left;
+    }
+	 .me {
+        color: red; 
+        margin-left: 10px; 
+        font-weight: bold; 
+        height: auto; 
+        float: left;
+    }
+	    .textsend {
+        /*float: left; */
+		    color: gray; 
+    margin-left: 10px;
+        width: 100%;
+        clear: both;
+    }
+    .beep {
+        color: black;   
+		margin-right: 20px; 
+        font-weight: bold; 
+        height: auto; 
+        float: left;
+    }
+
+    .text {
+        /*float: left; */
+        margin-left: 90px;
+        margin-right: 90px;
+    }
+
+    .time {
+        vertical-align: top; 
+        margin-right: 20px; 
+        font-weight: bold; 
+        font-size: 0.8em; 
+        float: right;
+    }
+
+    .line {
+        width: 80%;
+        height: 1px;
+        background-color: #CCCCCC;
+        clear: both;
+        margin: 0 auto;
+}
