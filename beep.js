@@ -9,13 +9,15 @@ var uid;
  //busca los mensajes remitidos al usuario
     var authClient = new FirebaseSimpleLogin(messagesRef, function(error, user) {
   if (error) {
-    alert("USuario no valido");
+    alert("Usuario no valido");
     return;
   }
   if (user) {
+ 
     // User is already logged in.
    // console.log('User ID: ' + user.uid + ', Provider: ' + user.provider);
 	messagesRef = new Firebase('https://radiant-fire-5086.firebaseio.com/'+ user.id);
+	 	    alert("Bienvenido");
   // Add a callback that is triggered for each chat message.
     uid=user.id
     messagesRef.limit(10).on('child_added', function (snapshot) {
