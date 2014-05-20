@@ -31,6 +31,7 @@ var uid;
 	 authClient.logout();
 	 hide();
 	 $("#Clave").val('');
+	 $("#messagesDiv").empty()
 	 $("#Login").show();  
 	});
 	//agrega amigos
