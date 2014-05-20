@@ -1,0 +1,64 @@
+<html>
+<head>
+  <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js'></script>
+  
+ 
+  <script src="http://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.2/jquery.mobile.min.js"></script>
+  
+  <script src='https://cdn.firebase.com/js/simple-login/1.4.1/firebase-simple-login.js'></script>
+  <script src="https://cdn.firebase.com/js/client/1.0.15/firebase.js"></script>
+  <script src="beep.js"></script>
+  
+  <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.2/jquery.mobile.css" />
+  
+  
+  <link rel="stylesheet" type="text/css" href="login.css">  
+</head>
+<body> 
+<h3 class="ui-bar ui-bar-a">BEEP</h3> 
+<div data-role="footer" class="nav-glyphish-example" data-theme="b">
+    <div data-role="navbar" class="nav-glyphish-example" data-grid="d">
+    <ul>
+        <li><a href="#" id="home" class="ui-icon-home ui-btn-icon-left"  ></a></li> 	
+      <!--  <li><a href="#" id="sendmsn" class="ui-icon-mail ui-btn-icon-left" ></a></li>        -->
+        <li><a href="#" id="beep" class="ui-icon-comment ui-btn-icon-left" ></a></li>
+        <li><a href="#" id="friends" class="ui-icon-user ui-btn-icon-left" ></a></li>
+        <li><a href="#" id="salir" class="ui-icon-power ui-btn-icon-left"></a></li> 
+    </ul>
+    </div>
+</div>
+ 
+ <fieldset id="Login"> 
+<input type='email' id='usuario' placeholder='Usuario' required>
+<input type='Password' id='Clave' placeholder='Clave' required> 
+<label><input type='checkbox' id="recordar" >Recordar</label>
+<input type='button' id='sendpass' value="Conectar">
+<input type='button' id='Registro' value="Registrarse">
+ </fieldset>
+  
+<div id="Registrousuario">
+<input type='email' id='usuarioRegistro' placeholder='Email'>
+<input type='Password' id='claveusuario' placeholder='Clave'>  
+<input type='Password' id='confirmar' placeholder='Confirmar Clave'> 
+<input type='button' id='createuser' value="registrar">
+</div>
+<div id="messagesDiv" style='width:auto; height:auto;overflow:auto;overflow-x: hidden;' >  
+</div>
+<div id="enviarmensaje">
+<h3 id="labelMensaje" class="ui-bar ui-bar-a">Enviar Beep</h3> 
+<select id='circuloamigo'> 
+<option value=0></option>
+</select> 
+<textarea type='text' id='messageInput' placeholder='Message...'></textarea>
+<input type='button' id='btnenviamsn' value="Enviar">
+</div> 
+<div id="RegistraAmigos">
+<input type='text' id='Email' placeholder='Email'>
+<input type='text' id='telefono' placeholder='Telefono'>  
+<input type='text' id='alias' placeholder='Alias'> 
+<input type='button' id='createfriend' value="conectar">
+</div>
+<div id="listaAmigos"> 
+</div>
+</body>
+</html>
