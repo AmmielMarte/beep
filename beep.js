@@ -92,7 +92,7 @@ $('#btnenviamsn').click(function () {
 	}
   });
   //clic credenciales de conexion
-$("#credencial").click(function(){ 
+$("#credencial").on("touchend", function () {
 	    alert("trata conectar");
       authClient.login("password", {
       email: $("#usuario").val(),
