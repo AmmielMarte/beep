@@ -9,17 +9,7 @@ var uid;
  //busca los mensajes remitidos al usuario
     var authClient = new FirebaseSimpleLogin(messagesRef, function(error, user) {
     	
-//clic credenciales de conexion
-$("#sendpass").click(function(){ 
-	    alert("trata conectar");
-      authClient.login("password", {
-      email: $("#usuario").val(),
-      password: $("#Clave").val(),
-      rememberMe: $("#recordar").val()
-    });
-       alert("envio conexion");
-	
-     });
+
   if (error) {
     alert("Usuario no valido");
     return;
@@ -101,6 +91,17 @@ $('#btnenviamsn').click(function () {
 		   $('#messageInput').val('');
 	}
   });
+  //clic credenciales de conexion
+$("#credencial").click(function(){ 
+	    alert("trata conectar");
+      authClient.login("password", {
+      email: $("#usuario").val(),
+      password: $("#Clave").val(),
+      rememberMe: $("#recordar").val()
+    });
+       alert("envio conexion");
+	
+     });
  //registro usuario buton login
 $('#Registro').click(function()
 {
