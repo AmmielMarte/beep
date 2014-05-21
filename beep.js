@@ -17,7 +17,7 @@ var uid;
     // User is already logged in.
    // console.log('User ID: ' + user.uid + ', Provider: ' + user.provider);
 	messagesRef = new Firebase('https://radiant-fire-5086.firebaseio.com/'+ user.id);
-	 	    alert("Bienvenido");
+	 
   // Add a callback that is triggered for each chat message.
     uid=user.id
     messagesRef.limit(10).on('child_added', function (snapshot) {
@@ -69,9 +69,8 @@ var uid;
   } else {
     // User is logged out.
     //showLoginBox(); 
-	hide();
-	 $("#Login").show();  
 
+	    alert("Verificar conexion");
 	 
   }
 });
