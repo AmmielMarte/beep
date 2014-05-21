@@ -74,7 +74,7 @@ var uid;
 	 
   }
 });
-//clic enviar mensaje
+//clic credenciales de conexion
 $("#sendpass").click(function(){ 
       authClient.login("password", {
       email: $("#usuario").val(),
