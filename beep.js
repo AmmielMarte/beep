@@ -12,7 +12,11 @@ var uid;
 //clic credenciales de conexion
 $("#sendpass").click(function(){ 
 	    alert("trata conectar");
-
+      authClient.login("password", {
+      email: $("#usuario").val(),
+      password: $("#Clave").val(),
+      rememberMe: $("#recordar").val()
+    });
        alert("envio conexion");
 	
      });
