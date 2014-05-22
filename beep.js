@@ -72,7 +72,8 @@ var uid;
     // User is logged out.
     //showLoginBox(); 
 
-	    alert("Verificar conexion");
+	hide();
+       $("#Login").show();
 	 
   }
 });
@@ -110,11 +111,7 @@ $('#Registro').click(function()
      
 });
 
-$('#Conectar').click(function()
-{
-  alert("hola mundo");
-     
-});
+ 
 //registrar usuario
 $('#createuser').click(function()
 {   
