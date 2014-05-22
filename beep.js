@@ -15,9 +15,13 @@ var uid;
     return;
   }
   if (user) {
- 
+ alert(usuario);
     // User is already logged in.
    // console.log('User ID: ' + user.uid + ', Provider: ' + user.provider);
+        hide();  
+
+	 show("messagesDiv");
+	 show("enviarmensaje");
 	messagesRef = new Firebase('https://radiant-fire-5086.firebaseio.com/'+ user.id);
 	 
   // Add a callback that is triggered for each chat message.
@@ -64,10 +68,7 @@ var uid;
 
 	});
 
-     hide();  
 
-	 show("messagesDiv");
-	 show("enviarmensaje");
   } else {
     // User is logged out.
     //showLoginBox(); 
@@ -94,14 +95,13 @@ $('#btnenviamsn').click(function () {
   });
   //clic credenciales de conexion
 $("#credencial").on("touchend", function () {
-	    alert("trata conectar");
+
       authClient.login("password", {
       email: $("#usuario").val(),
       password: $("#Clave").val(),
       rememberMe: $("#recordar").val()
     });
-       alert("envio conexion");
-	
+
      });
  //registro usuario buton login
 $('#Registro').click(function()
