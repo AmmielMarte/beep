@@ -109,6 +109,12 @@ $('#Registro').click(function()
 	 show("Registrousuario");
      
 });
+
+$('#Conectar').click(function()
+{
+  alert("hola mundo");
+     
+});
 //registrar usuario
 $('#createuser').click(function()
 {   
